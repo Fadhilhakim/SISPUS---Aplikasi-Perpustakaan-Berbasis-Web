@@ -2,20 +2,24 @@
  
 ![image](https://github.com/user-attachments/assets/256b10f6-7702-42f4-b513-fbcb476ed382)
 
-## List Fitur 
-- Halaman Dashboard
-- Dark Mode
-- Halaman Login	
-- Halaman Register (muncul jika sudah login)	
-- Halaman Data Mahasiswa	
-- Halaman CRUD Data Mahasiswa	
-- Halaman Data Buku	
-- Halaman CRUD Buku	
-- Halaman Data Anggota	
-- Halaman CRUD Data Anggota	
-- Halaman Peminjaman Buku	
-- Halaman Pengembalian	
-- Laporan PDF
+# Fitur Aplikasi
+
+| No. | Fitur                     | Deskripsi                        | Tersedia |
+|-----|---------------------------|----------------------------------|----------|
+| 1   | Halaman Dashboard         | Halaman utama aplikasi           | Yes      |
+| 2   | Dark Mode                 | Tema gelap untuk antarmuka       | Yes      |
+| 3   | Halaman Login             | Halaman untuk masuk ke aplikasi  | Yes      |
+| 4   | Halaman Register          | Halaman pendaftaran akun         | Yes      |
+| 5   | Halaman Data Mahasiswa    | Daftar data mahasiswa            | Yes      |
+| 6   | Halaman CRUD Data Mahasiswa | CRUD data mahasiswa              | Yes      |
+| 7   | Halaman Data Buku         | Daftar data buku                 | Yes      |
+| 8   | Halaman CRUD Buku         | CRUD data buku                   | Yes      |
+| 9   | Halaman Data Anggota      | Daftar data anggota              | Yes      |
+| 10  | Halaman CRUD Data Anggota | CRUD data anggota                | Yes      |
+| 11  | Halaman Peminjaman Buku   | Formulir peminjaman buku         | Yes      |
+| 12  | Halaman Pengembalian      | Formulir pengembalian buku       | Yes      |
+| 13  | Laporan PDF               | Generasi laporan dalam format PDF| Yes      |
+
 
 ## Preview
 
