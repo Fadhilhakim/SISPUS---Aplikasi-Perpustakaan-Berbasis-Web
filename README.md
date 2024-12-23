@@ -1,24 +1,26 @@
 ﻿# SISPUS (Aplikasi Perpustakaan Berbasis Web)
  
-![image](https://github.com/user-attachments/assets/256b10f6-7702-42f4-b513-fbcb476ed382)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/256b10f6-7702-42f4-b513-fbcb476ed382" alt="Logo Aplikasi" width="500" style="border-radius: 20%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"/>
+</div>
 
 # Fitur Aplikasi
 
-| No. | Fitur                     | Deskripsi                        | Tersedia |
-|-----|---------------------------|----------------------------------|----------|
-| 1   | Halaman Dashboard         | Halaman utama aplikasi           | Yes      |
-| 2   | Dark Mode                 | Tema gelap untuk antarmuka       | Yes      |
-| 3   | Halaman Login             | Halaman untuk masuk ke aplikasi  | Yes      |
-| 4   | Halaman Register          | Halaman pendaftaran akun         | Yes      |
-| 5   | Halaman Data Mahasiswa    | Daftar data mahasiswa            | Yes      |
-| 6   | Halaman CRUD Data Mahasiswa | CRUD data mahasiswa              | Yes      |
-| 7   | Halaman Data Buku         | Daftar data buku                 | Yes      |
-| 8   | Halaman CRUD Buku         | CRUD data buku                   | Yes      |
-| 9   | Halaman Data Anggota      | Daftar data anggota              | Yes      |
-| 10  | Halaman CRUD Data Anggota | CRUD data anggota                | Yes      |
-| 11  | Halaman Peminjaman Buku   | Formulir peminjaman buku         | Yes      |
-| 12  | Halaman Pengembalian      | Formulir pengembalian buku       | Yes      |
-| 13  | Laporan PDF               | Generasi laporan dalam format PDF| Yes      |
+| No. | Fitur                     | Tersedia |
+|-----|---------------------------|----------|
+| 1   | Halaman Dashboard         | Yes      |
+| 2   | Dark Mode                 | Yes      |
+| 3   | Halaman Login             | Yes      |
+| 4   | Halaman Register          | Yes      |
+| 5   | Halaman Data Mahasiswa    | Yes      |
+| 6   | Halaman CRUD Data Mahasiswa | Yes      |
+| 7   | Halaman Data Buku         | Yes      |
+| 8   | Halaman CRUD Buku         | Yes      |
+| 9   | Halaman Data Anggota      | Yes      |
+| 10  | Halaman CRUD Data Anggota | Yes      |
+| 11  | Halaman Peminjaman Buku   | Yes      |
+| 12  | Halaman Pengembalian      | Yes      |
+| 13  | Laporan PDF               | Yes      
 
 
 ## Preview
