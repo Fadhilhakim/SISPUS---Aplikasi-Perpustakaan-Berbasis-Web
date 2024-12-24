@@ -12,7 +12,7 @@ class Controller {
 
     public function render($view, $data = [], $title = '') {
         // Tentukan file path untuk tampilan
-        $viewPath = "../app/views/{$view}.php";
+        $viewPath = dirname(__DIR__) . "/views/{$view}.php";
     
         if (file_exists($viewPath)) {
             // Memasukkan data yang ingin diteruskan ke tampilan
