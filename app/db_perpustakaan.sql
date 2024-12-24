@@ -232,21 +232,25 @@ INSERT IGNORE INTO `buku` (`id`, `kode`, `kode_kategori`, `judul`, `jumlah`, `st
 	(63, 'B009', 'K001', 'Advanced PHP', 200, 200, 'Jane Smith', 'Code Publisher', '2022', '2024', 'Donasi', 'A1', '978-1-23-456789-0', 'https://img.freepik.com/premium-psd/black-book-cover-that-says-book-mockup_630294-120.jpg?w=360', '2024-12-22 21:21:07', 'admin');
 /*!40000 ALTER TABLE `buku` ENABLE KEYS */;
 
-CREATE TABLE IF NOT EXISTS `peminjaman_buku` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `nomor_anggota` varchar(12) COLLATE armscii8_bin NOT NULL,
-  `kode_buku` varchar(20) COLLATE armscii8_bin NOT NULL,
-  `tanggal_peminjaman` date NOT NULL,
-  `tanggal_pengembalian` date DEFAULT NULL,
-  `denda` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `last_update` datetime DEFAULT CURRENT_TIMESTAMP,
-  `userid` varchar(20) COLLATE armscii8_bin DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE,
-  KEY `kode_buku` (`kode_buku`) USING BTREE,
-  KEY `nomor_anggota` (`nomor_anggota`) USING BTREE,
-  CONSTRAINT `FK_peminjaman_buku_anggota_perpustakaan` FOREIGN KEY (`nomor_anggota`) REFERENCES `anggota_perpustakaan` (`nomor`),
-  CONSTRAINT `FK_peminjaman_buku_buku` FOREIGN KEY (`kode_buku`) REFERENCES `buku` (`kode`)
-) ENGINE=InnoDB DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
+CREATE TABLE `peminjaman_buku` (
+	`id` BIGINT(20) NOT NULL AUTO_INCREMENT,
+	`nomor_anggota` VARCHAR(20) NOT NULL COLLATE 'armscii8_bin',
+	`kode_buku` VARCHAR(20) NOT NULL COLLATE 'armscii8_bin',
+	`tanggal_peminjaman` DATE NOT NULL,
+	`tanggal_pengembalian` DATE NULL DEFAULT NULL,
+	`denda` VARCHAR(50) NULL DEFAULT NULL COLLATE 'armscii8_bin',
+	`last_update` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+	`userid` VARCHAR(20) NULL DEFAULT NULL COLLATE 'armscii8_bin',
+	PRIMARY KEY (`id`) USING BTREE,
+	INDEX `kode_buku` (`kode_buku`) USING BTREE,
+	INDEX `nomor_anggota` (`nomor_anggota`) USING BTREE,
+	CONSTRAINT `FK_peminjaman_buku_anggota_perpustakaan` FOREIGN KEY (`nomor_anggota`) REFERENCES `db_perpustakaan`.`anggota_perpustakaan` (`nomor`) ON UPDATE RESTRICT ON DELETE RESTRICT,
+	CONSTRAINT `FK_peminjaman_buku_buku` FOREIGN KEY (`kode_buku`) REFERENCES `db_perpustakaan`.`buku` (`kode`) ON UPDATE RESTRICT ON DELETE RESTRICT
+)
+COLLATE='armscii8_bin'
+ENGINE=InnoDB;
+
+
 
 /*!40000 ALTER TABLE `peminjaman_buku` DISABLE KEYS */;
 INSERT IGNORE INTO `peminjaman_buku` (`id`, `nomor_anggota`, `kode_buku`, `tanggal_peminjaman`, `tanggal_pengembalian`, `denda`, `last_update`, `userid`) VALUES

@@ -1,8 +1,8 @@
 <?php
 return [
-    'DB_HOST' => getenv('RAILWAY_PRIVATE_DOMAIN') ?: 'mysql.railway.internal',
-    'DB_NAME' => getenv('MYSQLDATABASE') ?: 'db_perpustakaan',
-    'DB_USER' => getenv('MYSQLUSER') ?: 'root',
-    'DB_PASS' => getenv('MYSQLPASSWORD') ?: 'OnexSTQKDlZQeALJQzTYWPCuelMjHhGN',
-    'DB_PORT' => getenv('MYSQLPORT') ?: '3306',
+    'DB_HOST' => 'autorack.proxy.rlwy.net',
+    'DB_NAME' => 'db_perpustakaan',
+    'DB_USER' => 'root',
+    'DB_PASS' => 'kuEXphHIfzHDrNzrzffZmjfMnzcorvAd',
+    'DB_PORT' => '55250',
 ];
