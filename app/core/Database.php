@@ -2,12 +2,21 @@
 
 class Database {
     private static $connection;
-    
+
     public static function getConnection() {
         if (self::$connection === null) {
             try {
-                // Ganti dengan informasi koneksi yang sesuai dengan database Anda
-                self::$connection = new PDO('mysql:host=127.0.0.1;dbname=db_perpustakaan', 'root', '');
+                // Ambil konfigurasi dari file config.php
+                $config = include __DIR__ . '/../config/config.php';
+
+                $host = $config['DB_HOST'];
+                $dbname = $config['DB_NAME'];
+                $username = $config['DB_USER'];
+                $password = $config['DB_PASS'];
+
+                // Inisialisasi koneksi
+                $dsn = "mysql:host=$host;dbname=$dbname";
+                self::$connection = new PDO($dsn, $username, $password);
                 self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $e) {
                 die('Connection failed: ' . $e->getMessage());
@@ -15,5 +24,4 @@ class Database {
         }
         return self::$connection;
     }
-    
 }
