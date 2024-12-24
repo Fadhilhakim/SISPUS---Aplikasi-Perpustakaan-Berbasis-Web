@@ -1,7 +1,7 @@
 <?php
 
 // Ambil konfigurasi database dari config.php
-$config = include __DIR__ . 'config/config.php';
+$config = include 'config/config.php';
 
 $host = $config['DB_HOST'];
 $port = $config['DB_PORT'];
@@ -10,7 +10,7 @@ $username = $config['DB_USER'];
 $password = $config['DB_PASS'];
 
 // Lokasi file SQL
-$sqlFile = __DIR__ . 'db_perpustakaan.sql';
+$sqlFile = 'app/db_perpustakaan.sql';
 
 // Cek apakah file SQL tersedia
 if (!file_exists($sqlFile)) {
