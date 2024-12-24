@@ -7,12 +7,12 @@ class Database {
         if (self::$connection === null) {
             try {
                 // Ambil konfigurasi dari file config.php
-                $config = include __DIR__ . '/../config/config.php';
+                // $config = include __DIR__ . '/../config/config.php';
 
-                $host = $config['DB_HOST'];
-                $dbname = $config['DB_NAME'];
-                $username = $config['DB_USER'];
-                $password = $config['DB_PASS'];
+                $host = 'autorack.proxy.rlwy.net';
+                $dbname = 'db_perpustakaan';
+                $username = 'root';
+                $password = 'kuEXphHIfzHDrNzrzffZmjfMnzcorvAd';
 
                 // Inisialisasi koneksi
                 $dsn = "mysql:host=$host;dbname=$dbname";
