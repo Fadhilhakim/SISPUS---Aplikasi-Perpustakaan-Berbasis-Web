@@ -1,4 +1,0 @@
-[services]
-  [services.web]
-  build = "./"
-  start = "nginx -g 'daemon off;' -c nginx.template.conf" 
