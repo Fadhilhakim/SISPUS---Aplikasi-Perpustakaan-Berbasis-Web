@@ -13,9 +13,9 @@ class Database {
                 $dbname = 'db_perpustakaan';
                 $username = 'root';
                 $password = 'kuEXphHIfzHDrNzrzffZmjfMnzcorvAd';
-
+                
                 // Inisialisasi koneksi
-                $dsn = "mysql:host=$host;dbname=$dbname";
+                $dsn = "mysql:host=$host;port=55250;dbname=$dbname";
                 self::$connection = new PDO($dsn, $username, $password);
                 self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $e) {

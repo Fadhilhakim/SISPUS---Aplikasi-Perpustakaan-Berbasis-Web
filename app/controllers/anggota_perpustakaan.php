@@ -13,10 +13,12 @@ class anggota_perpustakaan extends Controller {
     public function index(){
         $dataAnggotaModel = new DataAnggota();
         $data_anggota = $dataAnggotaModel->getAllAnggota();
+        $mahasiswa = $dataAnggotaModel->getAllMahasiswa();
         $userName = isLoggedIn();
         $this->render('anggota', [
             'user' => $userName, 
             'data_anggota' => $data_anggota,
+            'mahasiswa' => $mahasiswa
         ], 'Data Anggota');
     }
 
