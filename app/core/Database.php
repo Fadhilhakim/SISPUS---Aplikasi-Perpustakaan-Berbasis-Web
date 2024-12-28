@@ -6,13 +6,10 @@ class Database {
     public static function getConnection() {
         if (self::$connection === null) {
             try {
-                // Ambil konfigurasi dari file config.php
-                // $config = include __DIR__ . '/../config/config.php';
-
-                $host = 'autorack.proxy.rlwy.net';
+                $host = 'localhost';
                 $dbname = 'db_perpustakaan';
                 $username = 'root';
-                $password = 'kuEXphHIfzHDrNzrzffZmjfMnzcorvAd';
+                $password = '';
                 
                 // Inisialisasi koneksi
                 $dsn = "mysql:host=$host;port=55250;dbname=$dbname";
