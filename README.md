@@ -8,19 +8,16 @@
 
 | No. | Fitur                     | Tersedia |
 |-----|---------------------------|----------|
-| 1   | Halaman Dashboard         | Yes      |
-| 2   | Dark Mode                 | Yes      |
-| 3   | Halaman Login             | Yes      |
-| 4   | Halaman Register          | Yes      |
-| 5   | Halaman Data Mahasiswa    | Yes      |
-| 6   | Halaman CRUD Data Mahasiswa | Yes      |
-| 7   | Halaman Data Buku         | Yes      |
-| 8   | Halaman CRUD Buku         | Yes      |
-| 9   | Halaman Data Anggota      | Yes      |
-| 10  | Halaman CRUD Data Anggota | Yes      |
-| 11  | Halaman Peminjaman Buku   | Yes      |
-| 12  | Halaman Pengembalian      | Yes      |
-| 13  | Laporan PDF               | Yes      
+| 1   | Halaman Dashboard         |   Yes    |
+| 2   | Dark Mode                 |   Yes    |
+| 3   | Login & Register          |   Yes    |
+| 5   | Data Mahasiswa            |   Yes    |
+| 6   | CRUD Data Mahasiswa       |   Yes    |
+| 8   | CRUD Data Buku            |   Yes    |
+| 9   | CRUD Data Anggota         |   Yes    |
+| 11  | Peminjaman Buku           |   Yes    |
+| 12  | Pengembalian              |   Yes    |
+| 13  | Laporan PDF               |   Yes    |  
 
 
 ## Preview
