@@ -1,11 +1,16 @@
 <?php
-session_start(); 
 $content = ob_get_clean(); 
 
 require 'components/layout.php';
 ?>
 
-<div style="
+<div class="dark:bg-gray-900 bg-white" style="
+position: absolute;
+width: 100vw;
+height: 100vh;
+z-index: -100;
+"></div>
+<div class="bg-gray-900" style="
 position: absolute;
 width: 100vw;
 height: 100vh;
@@ -14,21 +19,19 @@ background-position: center;
 background-size:cover;
 object-fit:cover;
 background-repeat: no-repeat;
-z-index: -100;
-opacity: 0.3;
-">
-
-</div>
+z-index: -1;
+opacity: 0.5;
+"></div>
 
 
 <br><br><br><br>
-<p class="text-center block text-gray-50">
+<p class="text-center block dark:text-gray-50 ">
     <?php include 'components/logo.php' ?>
 
 </p>
 <br>
 
-<form class="max-w-sm mx-auto bg-transparent" action="/register/register" method="post">
+<form class="max-w-sm mx-auto dark:bg-gray-900 bg-gray-200 p-5" action="/register/register" method="post">
     <?php if (isset($error)): ?>
         <label class="block mb-2 text-sm font-medium text-red-500 dark:text-red-500 p-1"><?= $error ?></label>
     <?php endif; ?>
@@ -46,7 +49,7 @@ opacity: 0.3;
   </div>
   <div class="flex justify-between">
         <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Daftar</button>
-        <p>kembali <a href="/home" class="text-blue-200 underline">ke Dashboard</a></p>
+        <p class="text-gray-800 dark:text-gray-50">kembali <a href="/home" class="text-blue-600 hover:underline">ke Dashboard</a></p>
   </div>
 </form>
 

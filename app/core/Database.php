@@ -6,16 +6,16 @@ class Database {
     public static function getConnection() {
         if (self::$connection === null) {
             try {
-                // Ambil konfigurasi dari file config.php
-                // $config = include __DIR__ . '/../config/config.php';
+                $config = include __DIR__ . '/../config/config.php';
 
-                $host = 'autorack.proxy.rlwy.net';
-                $dbname = 'db_perpustakaan';
-                $username = 'root';
-                $password = 'kuEXphHIfzHDrNzrzffZmjfMnzcorvAd';
+                $host = $config['DB_HOST'];
+                $dbname = $config['DB_NAME'];
+                $username = $config['DB_USER'];
+                $password = $config['DB_PASS'];
+                $port = $config['DB_PORT'];
                 
                 // Inisialisasi koneksi
-                $dsn = "mysql:host=$host;port=55250;dbname=$dbname";
+                $dsn = "mysql:host=$host;port=$port;dbname=$dbname";
                 self::$connection = new PDO($dsn, $username, $password);
                 self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $e) {
