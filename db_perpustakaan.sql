@@ -5,15 +5,15 @@ CREATE TABLE IF NOT EXISTS `admins` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) COLLATE armscii8_bin NOT NULL,
   `password` varchar(255) COLLATE armscii8_bin NOT NULL,
+  `foto` VARCHAR(255) NULL DEFAULT 'https://i.pinimg.com/564x/c5/07/8e/c5078ec7b5679976947d90e4a19e1bbb.jpg' COLLATE 'armscii8_bin',
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
 
 /*!40000 ALTER TABLE `admins` DISABLE KEYS */;
-INSERT IGNORE INTO `admins` (`id`, `username`, `password`, `created_at`) VALUES
-	(7, 'admin', '$2y$10$3tD4k23xecO1VdNm9eyE4OoNh7.A.IUyh.xnw7D1us8VRzhp.IVK6', '2024-12-20 23:13:35'),
-	(8, 'Fadhil Hakim', '$2y$10$nGZ2hYap3TKiQ8JBLJ2.8O2OTuqZm7xYA78w.eUbD1FSTVWAG1cp6', '2024-12-24 02:15:34'),
-	(9, 'testing', '$2y$10$.k1KTHKQhwvyDAF3bBke2Oq1Q27OcATDO3O1tRh1KoJ01O6wglmA6', '2024-12-24 02:19:24');
+INSERT IGNORE INTO `admins` (`username`, `password`) VALUES
+	('admin', '$2y$10$3tD4k23xecO1VdNm9eyE4OoNh7.A.IUyh.xnw7D1us8VRzhp.IVK6'); 
+/* PASSWORD DEFAULT = 111 */;
 /*!40000 ALTER TABLE `admins` ENABLE KEYS */;
 
 CREATE TABLE IF NOT EXISTS `agama` (
