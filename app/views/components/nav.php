@@ -28,8 +28,12 @@
             class="mr-6 hidden md:flex items-center text-sm pe-1 font-medium text-gray-900 rounded-full border-1 border-gray-200 hover:text-gray-600 dark:hover:text-gray-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white"
             type="button">
             <span class="sr-only">Open user menu</span>
-            <img class="w-8 h-8 me-2 rounded-full"
-              src="https://i.pinimg.com/564x/c5/07/8e/c5078ec7b5679976947d90e4a19e1bbb.jpg" alt="user photo">
+            
+
+            <a href="/admin">
+            <div class="w-8 h-8 me-2 rounded-full" style="background-image: url(<?= $user['foto']; ?>); background-size:contain"></div>
+            </a>
+
               <?= $user['username']; ?>
             <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
               viewBox="0 0 10 6">
@@ -59,11 +63,15 @@
               </form>
             </div>
           </div>
-          <button id="switch_mode" onclick="toggleTheme()" type="button" class="ml-2 text-gray-800 dark:text-white hover:text-gray-500 dark:hover:text-gray-200">
+
+
+          <button id="switch_mode" onclick="toggleTheme()" type="button" class="ml-6 text-gray-800 dark:text-white hover:text-gray-500 dark:hover:text-gray-200">
             <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z"/>
             </svg>
           </button>
+
+
         </div>
       </div>
   </div>
