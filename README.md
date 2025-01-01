@@ -1,4 +1,4 @@
-﻿# SISPUS (Aplikasi Perpustakaan Berbasis Web)
+﻿﻿# SISPUS (Aplikasi Perpustakaan Berbasis Web)
  
 <div align="center">
   <img src="https://github.com/user-attachments/assets/256b10f6-7702-42f4-b513-fbcb476ed382" alt="Logo Aplikasi" width="500" style="border-radius: 20%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"/>
@@ -17,7 +17,8 @@
 | 9   | CRUD Data Anggota         |   Yes    |
 | 11  | Peminjaman Buku           |   Yes    |
 | 12  | Pengembalian              |   Yes    |
-| 13  | Laporan PDF               |   Yes    |  
+| 13  | CRUD Admin                |   Yes    |
+| 14  | Laporan PDF               |   Yes    |  
 
 
 ## Preview
@@ -44,6 +45,8 @@
 ![image](https://github.com/user-attachments/assets/6110ea1e-a3b2-4ca9-9377-b66fe636435b)
 
 ![image](https://github.com/user-attachments/assets/de969505-1a70-4eb3-83a3-3241edcf4ae8)
+
+![image](https://github.com/user-attachments/assets/ed2acefc-d220-4b1f-83a4-afc191727ded)
 
 
 
