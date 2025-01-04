@@ -1,10 +1,10 @@
-﻿﻿# SISPUS (Aplikasi Perpustakaan Berbasis Web)
+# SISPUS (Aplikasi Perpustakaan Berbasis Web)
  
 <div align="center">
   <img src="https://github.com/user-attachments/assets/256b10f6-7702-42f4-b513-fbcb476ed382" alt="Logo Aplikasi" width="500" style="border-radius: 20%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);"/>
 </div>
 
-# Fitur Aplikasi
+## Fitur Aplikasi
 
 | No. | Fitur                     | Tersedia |
 |-----|---------------------------|----------|
